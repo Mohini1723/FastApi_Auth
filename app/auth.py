@@ -7,8 +7,13 @@ from fastapi import Depends, HTTPException, status
 from app.database import db
 from app.schemas import TokenData, UserInDB
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # Configuration
-SECRET_KEY = "your_secret_key_here" # In production, use env variable
+SECRET_KEY = os.getenv("SECRET_KEY", "your_secret_key_here")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
