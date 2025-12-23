@@ -1,0 +1,8 @@
+Registering user: test@example.com
+User already registered, proceeding to login.
+Logging in...
+Login Response: 200 - {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0QGV4YW1wbGUuY29tIiwiZXhwIjoxNzY2NTA0NjE0fQ.GWEBTWCuuu5Doq4iMltXiNFrJLYyGmAZ-FSNrmQGf8U', 'token_type': 'bearer'}
+Received Token
+Accessing protected route...
+Protected Route Response: 200 - {'email': 'test@example.com', 'hashed_password': '$2b$12$pKUHEu5BcQjvQlUz9cKU.ubQwm5YZV4GN4xdw2/vOJwXaGDv1RIC6', 'created_at': '2025-12-23T14:36:33.278000'}
+Verification Successful!
